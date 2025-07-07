@@ -23,22 +23,16 @@ class TimeEntriesTable
                     ->searchable(),
                 TextColumn::make('started_at')
                     ->label('Von')
-                    ->time('H:i')
-                    ->sortable()
-                    ->searchable(),
+                    ->time('H:i'),
                 TextColumn::make('ended_at')
                     ->label('Bis')
-                    ->time('H:i')
-                    ->sortable()
-                    ->searchable(),
+                    ->time('H:i'),
                 TextColumn::make('duration_hours')
                     ->label('Dauer (h)')
-                    ->sortable()
-                    ->searchable(),
+                    ->sortable(),
                 TextColumn::make('notes')
                     ->label('Notizen')
                     ->limit(50)
-                    ->sortable()
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
