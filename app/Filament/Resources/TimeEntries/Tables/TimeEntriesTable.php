@@ -28,8 +28,7 @@ class TimeEntriesTable
                     ->label('Bis')
                     ->time('H:i'),
                 TextColumn::make('duration_hours')
-                    ->label('Dauer (h)')
-                    ->sortable(),
+                    ->label('Dauer (h)'),
                 TextColumn::make('notes')
                     ->label('Notizen')
                     ->limit(50)
