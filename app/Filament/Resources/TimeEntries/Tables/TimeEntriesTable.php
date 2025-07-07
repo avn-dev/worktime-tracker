@@ -35,7 +35,8 @@ class TimeEntriesTable
                 TextColumn::make('notes')
                     ->limit(50)
                     ->sortable()
-                    ->searchable(),
+                    ->searchable()
+                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //
