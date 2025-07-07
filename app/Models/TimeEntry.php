@@ -12,7 +12,7 @@ class TimeEntry extends Model
         'day',
         'started_at',
         'ended_at',
-        'duration',
+        'duration_hours',
         'notes'
     ];
 

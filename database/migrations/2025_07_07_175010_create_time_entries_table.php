@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('day');
             $table->time('started_at');
             $table->time('ended_at');
-            $table->integer('duration_hours')->nullable();
+            $table->decimal('duration_hours', 3, 2)->nullable();
             $table->text('notes')->nullable();
             $table->timestamps();
         });
