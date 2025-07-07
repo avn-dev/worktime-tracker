@@ -18,7 +18,7 @@ class TimeEntriesTable
             ->columns([
                 TextColumn::make('day')
                     ->label('Datum')
-                    ->date('D, d. M Y')
+                    ->date('D, d. M y')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('started_at')
