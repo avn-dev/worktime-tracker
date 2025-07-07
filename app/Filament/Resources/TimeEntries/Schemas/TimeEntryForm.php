@@ -23,6 +23,7 @@ class TimeEntryForm
                     ->dehydrated(),
 
                 DatePicker::make('day')
+                    ->label('Datum')
                     ->native(false)
                     ->required()
                     ->default(now())
@@ -30,6 +31,7 @@ class TimeEntryForm
                     ->maxDate(now()),
 
                 TimePicker::make('started_at')
+                    ->label('Von')
                     ->native(false)
                     ->required()
                     ->default('08:00')
@@ -44,6 +46,7 @@ class TimeEntryForm
                     }),
 
                 TimePicker::make('ended_at')
+                    ->label('Bis')
                     ->native(false)
                     ->required()
                     ->default('17:00')
@@ -58,7 +61,7 @@ class TimeEntryForm
                     }),
 
                 TextInput::make('duration_hours')
-                    ->label('Duration (hours)')
+                    ->label('Dauer (h)')
                     ->required()
                     ->disabled()
                     ->dehydrated()
@@ -69,6 +72,7 @@ class TimeEntryForm
                     }),
 
                 TextInput::make('notes')
+                    ->label('Notizen')
                     ->placeholder('Optional notes about this time entry')
                     ->maxLength(255)
                     ->columnSpanFull(),
