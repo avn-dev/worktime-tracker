@@ -17,22 +17,26 @@ class TimeEntriesTable
         return $table
             ->columns([
                 TextColumn::make('day')
+                    ->label('Datum')
                     ->date('D, d. M Y')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('started_at')
+                    ->label('Von')
                     ->time('H:i')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('ended_at')
+                    ->label('Bis')
                     ->time('H:i')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('duration_hours')
-                    ->label('Duration (hours)')
+                    ->label('Dauer (h)')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('notes')
+                    ->label('Notizen')
                     ->limit(50)
                     ->sortable()
                     ->searchable()
